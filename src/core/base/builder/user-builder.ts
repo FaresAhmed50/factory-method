@@ -31,7 +31,7 @@ export class User {
 
 export class UserBuilder implements UserBuilderInterface{
 
-    private readonly user : User;
+    private user : User;
 
     constructor() {
         this.user = new User();
@@ -72,7 +72,25 @@ export class UserBuilder implements UserBuilderInterface{
         return this;
     }
 
+    reset(): this {
+        this.user = {
+            name     : '',
+            email    : '',
+            phone    : '',
+            role     : UserRole.Viewer,
+            isActive : true,
+            avatar   : '',
+            city     : '',
+        }
+        return this;
+    }
+
     build(): User {
-        return Object.freeze(this.user);
+
+        const user = Object.freeze({...this.user});
+
+        this.reset();
+
+        return user
     }
 }

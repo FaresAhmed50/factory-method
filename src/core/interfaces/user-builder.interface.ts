@@ -10,4 +10,5 @@ export interface UserBuilderInterface {
     setAvatar(avatar: string): this;
     setCity(city: string): this;
     build(): User;
+    reset() : this;
 }
