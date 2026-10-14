@@ -9,7 +9,7 @@ export abstract class NotificationService {
 
 
     // the fixed logic for a specific flow
-    // foe example here sending a notification whatever what type of notification it is.
+    // for example here sending a notification whatever what type of notification it is.
     notify(massage : string) {
 
         const notification = this.sendNotification();
