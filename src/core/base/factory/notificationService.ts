@@ -1,4 +1,4 @@
-import {Notification} from "../interfaces/notification";
+import {Notification} from "../../interfaces/notification";
 
 
 export abstract class NotificationService {

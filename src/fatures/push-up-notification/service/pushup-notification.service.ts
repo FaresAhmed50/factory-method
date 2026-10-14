@@ -1,4 +1,4 @@
-import {NotificationService} from "../../../core/base/notificationService";
+import {NotificationService} from "../../../core/base/factory/notificationService";
 import {Notification} from "../../../core/interfaces/notification";
 import {PushNotification} from "../interface/push-notification";
 

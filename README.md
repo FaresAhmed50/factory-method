@@ -11,7 +11,7 @@ In this project:
 | Role | Class / Interface | File |
 |------|-------------------|------|
 | Product | `Notification` | `src/core/interfaces/notification.ts` |
-| Creator | `NotificationService` (abstract) | `src/core/base/notificationService.ts` |
+| Creator | `NotificationService` (abstract) | `src/core/base/factory/notificationService.ts` |
 | Concrete product | `PushNotification` | `src/fatures/push-up-notification/interface/push-notification.ts` |
 | Concrete product | `SmsNotification` | `src/fatures/sms-notification/interface/sms-notification.ts` |
 | Concrete creator | `pushUpNotificationService` | `src/fatures/push-up-notification/service/pushup-notification.service.ts` |
